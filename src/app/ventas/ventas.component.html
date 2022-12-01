@@ -1,0 +1,6 @@
+<div>
+<h1 *ngIf="plantel.jugador == 'Lionel Messi'">Finaliza tu compra de camiseta del jugador {{plantel.jugador}} THE GOAT</h1>
+<h1 *ngIf="plantel.jugador != 'Lionel Messi'">Finaliza tu compra de camiseta del jugador {{plantel.jugador}}</h1>
+<img [src]="plantel.img" [alt]="plantel.jugador" class="rounded mx-auto d-block">
+<app-btn-finalizar-compra [plantel]="plantel"></app-btn-finalizar-compra>
+</div>
